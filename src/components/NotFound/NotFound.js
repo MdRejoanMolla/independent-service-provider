@@ -1,9 +1,10 @@
 import React from 'react';
+import img from '../image/download.png'
 
 const NotFound = () => {
       return (
-            <div>
-                  <h1>not found</h1>
+            <div className='m-3'>
+                  <img src={img} alt="" />
             </div>
       );
 };
