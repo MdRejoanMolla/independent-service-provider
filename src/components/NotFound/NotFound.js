@@ -3,7 +3,7 @@ import img from '../image/download.png'
 
 const NotFound = () => {
       return (
-            <div className='m-3'>
+            <div>
                   <img src={img} alt="" />
             </div>
       );
