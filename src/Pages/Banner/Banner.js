@@ -22,8 +22,8 @@ const Banner = () => {
                               alt="First slide"
                         />
                         <Carousel.Caption>
-                              <h3>First slide label</h3>
-                              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                              <h1>FITNESS FROM HOME</h1>
+                              <p>Add This 5-Minute Upper Body Workout To Your Busy Schedele</p>
                         </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -33,9 +33,10 @@ const Banner = () => {
                               alt="Second slide"
                         />
 
-                        <Carousel.Caption>
-                              <h3>Second slide label</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <Carousel.Caption className='text'>
+                              <h1>An investment in knowledge pays the best interest</h1>
+                              <p>Take your career to
+                                    the next level.</p>
                         </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -46,9 +47,12 @@ const Banner = () => {
                         />
 
                         <Carousel.Caption>
-                              <h3>Third slide label</h3>
+                              <h1>Hire A Personal Trainer
+                                    To Be A Better Self</h1>
                               <p>
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                    Ditch the guesswork and see actual results with bespoke exercise
+
+                                    and meal plan from our team of experts.
                               </p>
                         </Carousel.Caption>
                   </Carousel.Item>
