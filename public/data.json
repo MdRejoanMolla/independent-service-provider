@@ -1,0 +1,44 @@
+[
+      {
+            "id": "1",
+            "name": "Treadmill",
+            "price": "4000",
+            "description": "You Certainly Definitely Realize That Practicing Consistently Is Perhaps Everything Thing That You Can Manage For Your Body. Remaining Dynamic Is Fundamental For Such Countless Various Reasons And It Isn't Simply Because",
+            "img": "https://i.ibb.co/VJZYL85/trademill.jpg"
+      },
+      {
+            "id": "2",
+            "name": "Cardio",
+            "price": "3500",
+            "description": "Cardiovascular Exercise Will Be Practice That Gets Your Pulse Up. However A Few Group Use It Exclusively For Weight Reduction, Cardio Has Different Advantages Also.",
+            "img": "https://i.ibb.co/YWMCf2B/cardio.jpg"
+      },
+      {
+            "id": "3",
+            "name": "Trainer",
+            "price": "3400",
+            "description": "Individual Preparing Is Tied In With Assisting Individuals With Arriving At Their Wellbeing And Wellness Objectives.",
+            "img": "https://i.ibb.co/Kmm8NJP/trainer.jpg"
+      },
+      {
+            "id": "4",
+            "name": "Equipments",
+            "price": "3000",
+            "description": "These Days, An Ever Increasing Number Of Individuals Are Becoming Wellbeing Cognizant. With This, Wellness Exercise Centers And Wellbeing Focuses Are Among Mainstream Objections Of Wellbeing Buffs",
+            "img": "https://i.ibb.co/p33gVy6/equipments.jpg"
+      },
+      {
+            "id": "5",
+            "name": "Diet Chart",
+            "price": "2500",
+            "description": "To Have A Solid Existence, It Is Fundamental To Follow A Decent Eating Routine. Offset Diet Is Related With Acceptable Wellbeing, Avoidance Of Infections And Recuperation From Sicknesses.",
+            "img": "https://i.ibb.co/MSYc0gB/diet.png"
+      },
+      {
+            "id": "6",
+            "name": "Weight Training",
+            "price": "2800",
+            "description": "You Don't Need To Be In The Weight Space For An Hour And A Half Daily To Get Results. For The Vast Majority, Short Weight Instructional A Few Times Each Week Are More Commonsense Than Are Expanded Every Day Exercises.",
+            "img": "https://i.ibb.co/R000nr8/weight-trainer.jpg"
+      }
+]

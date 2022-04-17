@@ -8,8 +8,9 @@ const Header = () => {
             <header className="header">
                   <Navbar sticky="top" bg="primary" variant="dark">
                         <Container>
-                              <Navbar.Brand href="#home">
+                              <Navbar.Brand className='d-flex' href="#home">
                                     <img src={icon} alt="" />
+                                    <p>ANYTIME FITNESS</p>
                               </Navbar.Brand>
                               <Nav className="me-auto">
                                     <Nav.Link href="#home">Home</Nav.Link>
