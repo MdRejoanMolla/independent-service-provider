@@ -5,7 +5,7 @@ import icon from '../image/icon.png'
 
 const Header = () => {
       return (
-            <header className="header">
+            <header className="header w-100">
                   <Navbar sticky="top" bg="primary" variant="dark">
                         <Container>
                               <Navbar.Brand className='d-flex' href="#home">
