@@ -5,10 +5,10 @@ import './Cart.css'
 
 const Cart = ({ service }) => {
       const { id, name, img, description, price } = service;
-      const navigate = useNavigate()
+      const navigate = useNavigate();
 
       const navigateToServiceDetails = id => {
-            navigate(`/service/${id}`)
+            navigate(`/service/${id}`);
       }
 
       return (
