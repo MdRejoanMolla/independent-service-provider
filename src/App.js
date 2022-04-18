@@ -11,6 +11,8 @@ import Login from './Pages/login/Login';
 import Service from './Pages/Services/Service';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import Register from './Pages/Register/Register';
+import Checkout from './Pages/Checkout/Checkout';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -23,6 +25,11 @@ function App() {
         <Route path="/login" element={<Login></Login>} />
         <Route path="/register" element={<Register></Register>} />
         <Route path="/service" element={<Service></Service>} />
+        <Route path="/checkout" element={
+          <RequireAuth>
+            <Checkout></Checkout>
+          </RequireAuth>
+        } />
         <Route path="/service/:serviceId" element={<ServiceDetails></ServiceDetails>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
