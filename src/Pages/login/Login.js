@@ -34,6 +34,9 @@ const Login = () => {
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                               <Form.Label>Password</Form.Label>
                               <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                              <Form.Text className="text-muted">
+                                    We'll never share your password with anyone else.
+                              </Form.Text>
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                               <Form.Check type="checkbox" label="Check me out" />
