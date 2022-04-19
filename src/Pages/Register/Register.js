@@ -10,6 +10,7 @@ import Loading from '../../components/Loading/Loading';
 
 const Register = () => {
       const [agree, setAgree] = useState(false);
+
       const [
             createUserWithEmailAndPassword,
             user,
@@ -17,32 +18,32 @@ const Register = () => {
             error,
       ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-      const [updateProfile, updating, error1] = useUpdateProfile(auth);
+      const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
       const navigate = useNavigate();
-      const navigateLogin = event => {
+      const navigateLogin = () => {
             navigate('/login');
-      }
-
-
-      const handleRegister = async (event) => {
-            event.preventDefault();
-            const displayName = event.target.name.value;
-            const email = event.target.email.value;
-            const password = event.target.password.value;
-            // const agree = event.target.terms.checked;
-
-            await createUserWithEmailAndPassword(email, password, displayName);
-            await updateProfile({ displayName });
-            console.log('Updated profile');
-            navigate('/')
-
       }
       if (loading || updating) {
             return <Loading></Loading>
       }
 
 
+
+
+      const handleRegister = async (event) => {
+            event.preventDefault();
+            const name = event.target.name.value;
+            const email = event.target.email.value;
+            const password = event.target.password.value;
+            // const agree = event.target.terms.checked;
+
+            await createUserWithEmailAndPassword(email, password);
+            await updateProfile({ displayName: name });
+
+            navigate('/')
+
+      }
 
 
       return (

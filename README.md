@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # ANYTIME FITNESS
-LIVE SITE LINK[AMYTIME FITNESS] (https://independent-service-a45e8.web.app/)
+LIVE SITE LINK[Anytime Fitness] (https://independent-service-a45e8.web.app/)
 
 * TOAST USED
 * EMAIL-PASSWORD TOGGLE
