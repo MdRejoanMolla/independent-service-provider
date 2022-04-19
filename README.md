@@ -2,6 +2,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# ANYTIME FITNESS
+LIVE SITE LINK[AMYTIME FITNESS] (https://independent-service-a45e8.web.app/)
+
+* TOAST USED
+* EMAIL-PASSWORD TOGGLE
+* GITHUB AND GOOGLE SIGN IN
+* CREATE BLOG
+* RELOAD MAINTAIN
+* OUR SERVICES
+* CREATE 404 
+
+### OTHER LIST 
+
+* REACT BOOTSTRAP
+* FIREBASE
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

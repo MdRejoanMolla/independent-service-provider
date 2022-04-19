@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../firebase.init';
 import './Register.css'
 import SocialLogin from '../login/SocialLogin/SocialLogin';
+import Loading from '../../components/Loading/Loading';
 
 
 const Register = () => {
@@ -15,6 +16,7 @@ const Register = () => {
             loading,
             error,
       ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
       const [updateProfile, updating, error1] = useUpdateProfile(auth);
 
       const navigate = useNavigate();
@@ -30,23 +32,28 @@ const Register = () => {
             const password = event.target.password.value;
             // const agree = event.target.terms.checked;
 
-            await createUserWithEmailAndPassword(email, password);
+            await createUserWithEmailAndPassword(email, password, displayName);
             await updateProfile({ displayName });
-            alert('Updated profile');
+            console.log('Updated profile');
             navigate('/')
 
       }
+      if (loading || updating) {
+            return <Loading></Loading>
+      }
+
+
 
 
       return (
             <div className='register-form'>
                   <h3 className='text-primary m-3'>Please Register </h3>
                   <form onSubmit={handleRegister}>
-                        <input type="text" name='name' id='' placeholder='your name' />
+                        <input type="text" name='name' id='1' placeholder='your name' />
 
-                        <input type="email" name='email' id='' placeholder='your email' required />
+                        <input type="email" name='email' id='2' placeholder='your email' required />
 
-                        <input type="password" name='password' id='' placeholder='your password' required />
+                        <input type="password" name='password' id='3' placeholder='your password' required />
                         <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
                         <label className={agree ? "ps-2 text-primary" : 'ps-2 text-danger'} htmlFor="terms">Accept Anytime Fitness Terms and Conditions</label>
 
